@@ -15,17 +15,24 @@ interface Question {
 export default function QuizStart() {
 
   const searchParams = useSearchParams();
-  const [loading, setloading] = useState(false);
+  const [loading, setLoading] = useState(false);
   const topic = searchParams.get('topic'); 
   const level = searchParams.get('level');
   const [data, setData] = useState<Question[]>([]);
   const router = useRouter();
-
-  const [answers, setAnswers] = useState<(string | number | null)[]>([]);
+  const [answers, setAnswers] = useState<(string | number | null)[]>(() => {
+  if (typeof window !== "undefined") {
+    const cached = localStorage.getItem("answers");
+    return cached ? JSON.parse(cached) : [];
+  }
+  return [];
+});
   const { setQuizData } = useQuizStore();
 
  useEffect(() => {
-  if (!topic || !level) {
+
+  const cached = localStorage.getItem("answers");
+  if (!topic || !level || cached) {
     router.push("/start");
     return;
   }
@@ -40,6 +47,8 @@ export default function QuizStart() {
   }
 }, [topic, level,router]);
 
+
+
 const handleAnswer = (e: React.MouseEvent<HTMLLIElement>) => {
     const qIndex = Number(e.currentTarget.dataset.qindex); 
     const value = e.currentTarget.dataset.value; 
@@ -53,22 +62,24 @@ const handleAnswer = (e: React.MouseEvent<HTMLLIElement>) => {
       for (let i = 0; i < qIndex; i++) {
         if (updated[i] === undefined || updated[i] === "empty") updated[i] = null;
       }
-
+      
+      localStorage.setItem("answers",JSON.stringify(updated));
       return updated;
     });
 }
-
-console.log(answers)
-
 
 function handleSubmit(){
   if(answers.length < 1){
     return
   }
-  setloading(true);
+  setLoading(true);
   setQuizData(data, answers);
-  setloading(false);
+  const newresults = data.map(({level,...data}) => data);
+  localStorage.setItem("results", JSON.stringify(newresults));
   router.push("/score");
+  setTimeout(()=>{
+    setLoading(false);
+  },3000)
 }
 
   return (

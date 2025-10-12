@@ -1,6 +1,7 @@
 "use client"
 import { useEffect, useState } from "react";
 import { useRouter } from 'next/navigation';
+import Link from "next/link";
 
 export default function Start() {
 
@@ -14,6 +15,7 @@ export default function Start() {
   const [level, setLevel] = useState("");
 
   useEffect(()=>{
+    localStorage.clear();
     if(topic || level){
       setErr("")
     }
@@ -39,7 +41,7 @@ export default function Start() {
   return (
     <div className="w-dvw">
       
-      <p className="text-[20px] font-mono my-2 bg-blue-900 p-2 text-white justify-center flex">Choose your preferred topic and level</p>
+      <p className="text-[20px] font-mono mb-5 bg-blue-900 p-2 text-white justify-center flex">Choose your preferred topic and level</p>
 
       {msg && <div className="flex justify-center text-green-500 font-bold text-[18px]">{`You have selected ${topic.charAt(0).toUpperCase() + topic.slice(1)} ${level ? `and ${level} level`: ""}`}</div>}
       {err && <div className="flex justify-center text-red-500 font-bold text-[18px]">{err}</div>}
@@ -65,6 +67,10 @@ export default function Start() {
      onClick={handleQuizStart}
      className="block w-fit my-5 py-2 px-3 bg-blue-900 text-white mx-auto font-bold rounded">
       Start quiz</button>
+
+      <button 
+     className="block w-fit mt-25 py-2 px-3 bg-blue-400 text-white mx-auto text-[14px] rounded">
+      <Link href="/">Go home</Link></button>
     </div>
   );
 }

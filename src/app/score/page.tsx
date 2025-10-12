@@ -18,9 +18,13 @@ export default function ScorePage() {
   calculateScore();
 
   function grade(score: number){
-    if(score > 5){
-      return "You did well"
-    }else{
+    if(score == 10){
+      return "Excellent"
+    }else if(score >= 8 ){
+      return "You did great"
+    }else if(score >= 5){
+      return "You did well"}
+    else{
       return "You can do better"
     }}
  

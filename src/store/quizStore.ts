@@ -6,13 +6,13 @@ interface Question {
   question: string;
   possibleSolutions: string[];
   rightAnswer: string;
-  level: DifficultyLevel;
+  level?: DifficultyLevel;
 }
 
 type QuizStore = {
   data: Question[];
   answers: (string | number | null)[];
-  setQuizData: (q: any[], a: (string | number | null)[]) => void;
+  setQuizData: (q: Question[], a?: (string | number | null)[]) => void;
 };
 
 export const useQuizStore = create<QuizStore>((set) => ({
