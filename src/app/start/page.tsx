@@ -53,10 +53,10 @@ export default function Start() {
       </div>
 
       <p className="font-bold bg-blue-100 rounded w-fit p-2 mx-5 mt-5 mb-2 min-md:mx-auto">Select Level</p>
-      <div className="max-sm:flex max-sm:mx-4 mx-auto grid  grid-cols-3 w-180">
+      <div className="max-sm:flex max-sm:mx-4 mx-auto grid  grid-cols-3 w-150">
         {difficulty.map((item,i) =>
         <button name={item} onClick={handleLevel}
-        className={`${item === level ? "bg-green-600 text-white": ""} shadow-[1px_1px_5px_grey] rounded mx-2 my-1 p-3 min-md:mx-auto w-50`} key={i}>
+        className={`${item === level ? "bg-green-600 text-white": ""} shadow-[1px_1px_5px_grey] rounded mx-2 my-1 p-3 min-md:mx-auto w-35`} key={i}>
           {item.charAt(0).toUpperCase() + item.slice(1)}
         </button>)}
       </div>

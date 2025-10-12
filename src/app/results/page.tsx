@@ -22,7 +22,7 @@ export default function ResultsPage() {
       }
     },3000)
     
-  },[])
+  },[router, data.length])
 
   if(loading){
     return <div className="w-dvw min-h-min">

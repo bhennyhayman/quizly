@@ -1,6 +1,5 @@
 import Link from "next/link";
 import {MdDraw} from "react-icons/md";
-import { FaTimesCircle } from "react-icons/fa";
 
 export default function Home() {
   return (
