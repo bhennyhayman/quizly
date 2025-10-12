@@ -1,5 +1,5 @@
 
-type Topic = "mathematics" | "science" | "english" 
+type Topic = "mathematics" | "science" | "english" | "literature"
 type DifficultyLevel = 'beginner' | 'intermediate' | 'hard';
 
 interface Question {
