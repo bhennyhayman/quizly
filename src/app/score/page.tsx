@@ -2,6 +2,7 @@
 import { useQuizStore } from "@/store/quizStore";
 import { GiPartyPopper } from "react-icons/gi";
 import Link from "next/link";
+import { FaHandsClapping } from "react-icons/fa6";
 
 export default function ScorePage() {
   const { data, answers } = useQuizStore();
@@ -35,9 +36,10 @@ export default function ScorePage() {
 
       <div className="flex items-center text-2xl gap-5 justify-center"><span className="text-fuchsia-800">Completed Quiz</span> <GiPartyPopper size={30}/></div>
 
-      <div className="flex flex-col justify-self-center shadow-2xl py-5 m-5 px-7 text-2xl text-center">
+      <div className="flex flex-col justify-self-center shadow-2xl py-5 m-5 px-10 rounded text-2xl text-center">
         <div className="my-2 text-4xl text-green-600">Score: {score}/{data.length}</div>
-        <div className="text-[18px ]">{grade(score)}</div>
+        <div className="flex justify-center my-3"><FaHandsClapping size={30} color="skyblue"/></div>
+        <div className="text-[16px] italic">{grade(score)}</div>
       </div>
       
       <div>

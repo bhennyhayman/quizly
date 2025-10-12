@@ -2,7 +2,7 @@
 export default function Navbar() {
   return (
     <div>
-      <div className="bg-cyan-500 text-white w-dvw h-13 flex items-center px-5 font-bold justify-center text-2xl"> 
+      <div className="bg-cyan-500 text-white text-2xl text-center py-3 font-bold"> 
           Quiz App
         </div>
     </div>

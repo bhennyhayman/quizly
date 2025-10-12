@@ -84,27 +84,27 @@ function handleSubmit(){
 }
 
   return (
-    <div className='w-dvw'>
-      <p className='flex justify-center mb-3 py-2 text-white font-bold bg-blue-950'>{topic?.toUpperCase()} - {level?.toUpperCase()}</p> 
+    <div className=''>
+      <p className='text-center mb-3 py-2 text-white font-bold bg-blue-950'>{topic?.toUpperCase()} - {level?.toUpperCase()}</p> 
+ 
+      <div className=' text-center underline text-[18px]'>Choose the right answer to the questions provided</div>
 
-      <div className='mx-auto text-[18px] underline my-2 font-semibold w-fit '>Choose the right answer to the questions provided</div>
-
-      <div className='questions-card'>
-        {data.length > 0 ? <div>{data.map((item, i)=> <div key={i} className='shadow-[1px_1px_6px_#a3a3a3] max-sm:mx-5 mx-auto my-4 min-md:w-150 text-[18px] p-2'>
-          <p  className='mx-2 mt-2'> {i+1}. {item.question}</p>
-          <ul className='flex flex-col mx-5 my-2 cursor-pointer'>
+      <div className='m-5'>
+        {data.length > 0 && <div>{data.map((item, i)=> <div key={i} className='m-2 p-2 shadow-[1px_1px_7px_grey]'>
+          <p  className='font-semibold text-[18px]'> {i+1}. {item.question}</p>
+          <ul className='cursor-pointer my-1'>
             {item.possibleSolutions.map((answer,ai)=>
             <li key={ai}
             data-qindex={i}
             data-value={answer}
             onClick={handleAnswer}
-            className={`${answers[i] == answer ? "bg-blue-300": ""} m-[1px] border-1 border-neutral-200 px-5 py-1`}> {answer}</li>)}
+            className={`${answers[i] == answer ? "bg-blue-300": ""} my-1 mx-2 rounded px-3 border-neutral-300 border-1 py-1`}> {answer}</li>)}
           </ul>
-        </div>)}</div>: ""}
-        
+        </div>)}</div>}
       </div>
+     
 
-      <button className='block px-5 w-fit bg-blue-950 mx-auto text-white mt-5 mb-10 rounded py-2' onClick={handleSubmit}>{loading ? "submitting...": "submit"}</button>
+      <button className='block px-5 w-fit bg-blue-950 mx-auto text-white mt-5 mb-10 rounded py-2' onClick={handleSubmit}>{loading ? "submitting...": "submit"}</button> 
     </div>
   );
 }

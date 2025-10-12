@@ -39,15 +39,15 @@ export default function Start() {
 
 
   return (
-    <div className="w-dvw">
-      
-      <p className="text-[20px] font-mono mb-5 bg-blue-900 p-2 text-white justify-center flex">Choose your preferred topic and level</p>
+    <div>
+      <p className="bg-blue-900 text-[18px] py-2 text-white text-center">Choose your preferred topic and level</p>
 
-      {msg && <div className="flex justify-center text-green-500 font-bold text-[18px]">{`You have selected ${topic.charAt(0).toUpperCase() + topic.slice(1)} ${level ? `and ${level} level`: ""}`}</div>}
-      {err && <div className="flex justify-center text-red-500 font-bold text-[18px]">{err}</div>}
+      {msg && <div className="text-center text-green-500 font-bold text-[18px] my-2">{`You have selected ${topic.charAt(0).toUpperCase() + topic.slice(1)} ${level ? `and ${level} level`: ""}`}</div>}
+      {err && <div className="text-center text-red-500 my-2 font-bold text-[18px]">{err}</div>}
 
       <div className="font-bold bg-blue-100 w-fit p-2 mx-5 rounded mt-5 min-md:mx-auto">Select a topic</div>
-      <div className="grid grid-cols-2 min-md:grid-cols-2 min-md:w-150 min-md:mx-auto mx-3 my-1">
+      
+      <div className="grid grid-cols-2 min-md:grid-cols-2 min-md:mx-auto min-md:w-150 mx-3 my-1">
         {topics.map((item,i) =>
         <button onClick={handleTopic} name={item} className={`shadow-[1px_1px_5px_grey] ${item === topic ? "bg-green-600 text-white": ""} rounded mx-2 my-2 p-3`} key={i}>
           {item.charAt(0).toUpperCase() + item.slice(1)}
@@ -55,7 +55,7 @@ export default function Start() {
       </div>
 
       <p className="font-bold bg-blue-100 rounded w-fit p-2 mx-5 mt-5 mb-2 min-md:mx-auto">Select Level</p>
-      <div className="max-sm:flex max-sm:mx-4 mx-auto grid  grid-cols-3 w-150">
+      <div className="max-sm:flex mx-auto max-sm:w-fit w-150 grid grid-cols-3">
         {difficulty.map((item,i) =>
         <button name={item} onClick={handleLevel}
         className={`${item === level ? "bg-green-600 text-white": ""} shadow-[1px_1px_5px_grey] rounded mx-2 my-1 p-3 min-md:mx-auto w-35`} key={i}>
