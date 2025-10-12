@@ -65,11 +65,11 @@ export default function Start() {
 
      <button 
      onClick={handleQuizStart}
-     className="block w-fit my-5 py-2 px-3 bg-blue-900 text-white mx-auto font-bold rounded">
+     className="block w-fit mt-25 mb-2 py-2 px-3 bg-blue-900 text-white mx-auto font-bold rounded">
       Start quiz</button>
 
       <button 
-     className="block w-fit mt-25 py-2 px-3 bg-blue-400 text-white mx-auto text-[14px] rounded">
+     className="block w-fit mt-10 py-2 px-3 bg-blue-400 text-white mx-auto text-[14px] rounded">
       <Link href="/">Go home</Link></button>
     </div>
   );
