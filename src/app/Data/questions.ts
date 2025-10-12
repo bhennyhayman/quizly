@@ -536,7 +536,189 @@ const questions:QuestionsData = {
       "rightAnswer": "Planets orbit in ellipses",
       "level": "hard"
     }
-  ]
+  ], literature: [
+  {
+    "question": "Who wrote 'Romeo and Juliet'?",
+    "possibleSolutions": ["William Shakespeare", "Charles Dickens", "Jane Austen", "George Orwell"],
+    "rightAnswer": "William Shakespeare",
+    "level": "beginner"
+  },
+  {
+    "question": "What is the main character’s name in 'Oliver Twist'?",
+    "possibleSolutions": ["Harry", "Oliver", "Jack", "Peter"],
+    "rightAnswer": "Oliver",
+    "level": "beginner"
+  },
+  {
+    "question": "Who is the author of 'Things Fall Apart'?",
+    "possibleSolutions": ["Ngũgĩ wa Thiong’o", "Chinua Achebe", "Wole Soyinka", "Ama Ata Aidoo"],
+    "rightAnswer": "Chinua Achebe",
+    "level": "beginner"
+  },
+  {
+    "question": "In which country is 'Things Fall Apart' set?",
+    "possibleSolutions": ["Ghana", "Nigeria", "Kenya", "South Africa"],
+    "rightAnswer": "Nigeria",
+    "level": "beginner"
+  },
+  {
+    "question": "What type of play is 'Macbeth'?",
+    "possibleSolutions": ["Comedy", "Tragedy", "Romance", "Satire"],
+    "rightAnswer": "Tragedy",
+    "level": "beginner"
+  },
+  {
+    "question": "Who wrote 'Pride and Prejudice'?",
+    "possibleSolutions": ["Jane Austen", "Charlotte Brontë", "Emily Brontë", "Louisa May Alcott"],
+    "rightAnswer": "Jane Austen",
+    "level": "beginner"
+  },
+  {
+    "question": "What is the setting of 'Animal Farm'?",
+    "possibleSolutions": ["A factory", "A farm", "A school", "A city"],
+    "rightAnswer": "A farm",
+    "level": "beginner"
+  },
+  {
+    "question": "In poetry, what is a 'stanza'?",
+    "possibleSolutions": ["A verse or group of lines", "A rhyme", "A title", "A character"],
+    "rightAnswer": "A verse or group of lines",
+    "level": "beginner"
+  },
+  {
+    "question": "Who wrote 'The Adventures of Tom Sawyer'?",
+    "possibleSolutions": ["Mark Twain", "Charles Dickens", "Jack London", "Ernest Hemingway"],
+    "rightAnswer": "Mark Twain",
+    "level": "intermediate"
+  },
+  {
+    "question": "Which novel begins with 'Call me Ishmael'?",
+    "possibleSolutions": ["Moby Dick", "The Old Man and the Sea", "The Odyssey", "Treasure Island"],
+    "rightAnswer": "Moby Dick",
+    "level": "intermediate"
+  },
+  {
+    "question": "Who wrote the poem 'The Raven'?",
+    "possibleSolutions": ["Walt Whitman", "Edgar Allan Poe", "Robert Frost", "William Blake"],
+    "rightAnswer": "Edgar Allan Poe",
+    "level": "intermediate"
+  },
+  {
+    "question": "In 'Julius Caesar', who says 'Et tu, Brute?'",
+    "possibleSolutions": ["Brutus", "Julius Caesar", "Cassius", "Antony"],
+    "rightAnswer": "Julius Caesar",
+    "level": "intermediate"
+  },
+  {
+    "question": "What is the main theme of 'Lord of the Flies'?",
+    "possibleSolutions": ["The power of civilization vs. savagery", "Love and betrayal", "Revenge", "Freedom and justice"],
+    "rightAnswer": "The power of civilization vs. savagery",
+    "level": "intermediate"
+  },
+  {
+    "question": "Who wrote 'A Raisin in the Sun'?",
+    "possibleSolutions": ["Toni Morrison", "Lorraine Hansberry", "Alice Walker", "Zora Neale Hurston"],
+    "rightAnswer": "Lorraine Hansberry",
+    "level": "intermediate"
+  },
+  {
+    "question": "In Shakespeare’s plays, what does 'comic relief' mean?",
+    "possibleSolutions": ["A funny scene to lighten a serious play", "A tragedy", "A dance", "A fight"],
+    "rightAnswer": "A funny scene to lighten a serious play",
+    "level": "intermediate"
+  },
+  {
+    "question": "Who is the main character in 'The Great Gatsby'?",
+    "possibleSolutions": ["Jay Gatsby", "Tom Buchanan", "Nick Carraway", "Daisy Buchanan"],
+    "rightAnswer": "Jay Gatsby",
+    "level": "intermediate"
+  },
+  {
+    "question": "Which Shakespeare play features the characters Rosencrantz and Guildenstern?",
+    "possibleSolutions": ["Hamlet", "Othello", "King Lear", "Macbeth"],
+    "rightAnswer": "Hamlet",
+    "level": "intermediate"
+  },
+  {
+    "question": "Who wrote 'The Waste Land'?",
+    "possibleSolutions": ["T.S. Eliot", "W.B. Yeats", "Robert Frost", "Sylvia Plath"],
+    "rightAnswer": "T.S. Eliot",
+    "level": "hard"
+  },
+  {
+    "question": "What is the literary term for a recurring symbol or theme?",
+    "possibleSolutions": ["Motif", "Irony", "Allegory", "Paradox"],
+    "rightAnswer": "Motif",
+    "level": "hard"
+  },
+  {
+    "question": "In Greek tragedy, what is 'hamartia'?",
+    "possibleSolutions": ["A fatal flaw", "A hero", "A chorus", "A prophecy"],
+    "rightAnswer": "A fatal flaw",
+    "level": "hard"
+  },
+  {
+    "question": "Who wrote 'Waiting for Godot'?",
+    "possibleSolutions": ["Samuel Beckett", "Harold Pinter", "George Bernard Shaw", "Tennessee Williams"],
+    "rightAnswer": "Samuel Beckett",
+    "level": "hard"
+  },
+  {
+    "question": "What narrative perspective uses 'he', 'she', or 'they'?",
+    "possibleSolutions": ["Third person", "First person", "Second person", "Omniscient view"],
+    "rightAnswer": "Third person",
+    "level": "intermediate"
+  },
+  {
+    "question": "What is a sonnet?",
+    "possibleSolutions": ["A 14-line poem", "A long novel", "A play", "A short story"],
+    "rightAnswer": "A 14-line poem",
+    "level": "beginner"
+  },
+  {
+    "question": "Who wrote 'The Odyssey'?",
+    "possibleSolutions": ["Homer", "Virgil", "Sophocles", "Aristotle"],
+    "rightAnswer": "Homer",
+    "level": "intermediate"
+  },
+  {
+    "question": "What is the setting of 'To Kill a Mockingbird'?",
+    "possibleSolutions": ["Maycomb, Alabama", "New York City", "London", "Mississippi"],
+    "rightAnswer": "Maycomb, Alabama",
+    "level": "intermediate"
+  },
+  {
+    "question": "Who is the tragic hero in 'Othello'?",
+    "possibleSolutions": ["Othello", "Iago", "Cassio", "Desdemona"],
+    "rightAnswer": "Othello",
+    "level": "hard"
+  },
+  {
+    "question": "Who wrote 'Beloved'?",
+    "possibleSolutions": ["Toni Morrison", "Maya Angelou", "Alice Walker", "Zora Neale Hurston"],
+    "rightAnswer": "Toni Morrison",
+    "level": "hard"
+  },
+  {
+    "question": "In literature, what does 'foreshadowing' mean?",
+    "possibleSolutions": ["A hint of what will happen later", "A flashback", "A twist", "An ending"],
+    "rightAnswer": "A hint of what will happen later",
+    "level": "beginner"
+  },
+  {
+    "question": "Who wrote 'The Canterbury Tales'?",
+    "possibleSolutions": ["Geoffrey Chaucer", "John Milton", "William Blake", "Thomas Hardy"],
+    "rightAnswer": "Geoffrey Chaucer",
+    "level": "hard"
+  },
+  {
+    "question": "In 'Animal Farm', which animal represents Joseph Stalin?",
+    "possibleSolutions": ["Napoleon", "Snowball", "Boxer", "Squealer"],
+    "rightAnswer": "Napoleon",
+    "level": "intermediate"
+  }
+]
+
 }
 
 
