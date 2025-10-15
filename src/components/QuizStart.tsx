@@ -90,7 +90,7 @@ function handleSubmit(){
       <div className=' text-center underline text-[18px]'>Choose the right answer to the questions provided</div>
 
       <div className='m-2'>
-        {data.length > 0 && <div>{data.map((item, i)=> <div key={i} className='my-5 mx-2 p-2 shadow-[1px_1px_7px_grey]'>
+        {data.length > 0 && <div>{data.map((item, i)=> <div key={i} className='my-5 mx-2 p-2 shadow-[1px_1px_7px_grey] min-md:w-120'>
           <p  className='font-semibold text-[18px]'> {i+1}. {item.question}</p>
           <ul className='cursor-pointer my-1'>
             {item.possibleSolutions.map((answer,ai)=>
