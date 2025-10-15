@@ -4,7 +4,7 @@ import {MdDraw} from "react-icons/md";
 export default function Home() {
   return (
         <div>
-        <div className="flex justify-center my-10 text-2xl font-bold">Welcome to Boom Quiz</div>
+        <div className="flex justify-center my-10 text-2xl font-bold">Welcome to Quizly Learn</div>
 
         <div className="flex justify-center">
           <MdDraw size={50}/>
